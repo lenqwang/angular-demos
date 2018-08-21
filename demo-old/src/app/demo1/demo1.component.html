@@ -1,0 +1,11 @@
+<h3>1、通过Events(事件)控制数据的变化</h3>
+
+<p>当前值：{{ counter }}</p>
+<button (click)="countUp()"> + </button>
+
+<h3>2、通过setInterval控制数据的变化</h3>
+<p>当前值：{{ counter_interval }}</p>
+
+<h3>3、通过XHR控制数据的变化</h3>
+<p *ngIf="!counter_xhr">加载中...</p>
+<p *ngIf="counter_xhr">当前值：{{ counter_xhr }}</p>
